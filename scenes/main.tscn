@@ -1,0 +1,97 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/art/background_material.tres" type="Material" id=1]
+[ext_resource path="res://assets/art/backgrounds/Yellow.png" type="Texture" id=2]
+[ext_resource path="res://assets/art/fonts/standard.tres" type="DynamicFont" id=3]
+[ext_resource path="res://scripts/character_screen.gd" type="Script" id=4]
+[ext_resource path="res://assets/art/backgrounds/Pink.png" type="Texture" id=6]
+[ext_resource path="res://scripts/world.gd" type="Script" id=7]
+[ext_resource path="res://scripts/camera.gd" type="Script" id=8]
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 7 )
+
+[node name="Background" type="TextureRect" parent="."]
+material = ExtResource( 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -5.0
+margin_top = -5.0
+margin_right = 645.0
+margin_bottom = 365.0
+texture = ExtResource( 6 )
+expand = true
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayerContainer" type="Node2D" parent="."]
+
+[node name="LevelContainer" type="Node2D" parent="."]
+
+[node name="UI" type="Control" parent="."]
+margin_right = 640.0
+margin_bottom = 360.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CharacterScreen" type="Control" parent="UI"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="UI/CharacterScreen"]
+material = ExtResource( 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -325.0
+margin_top = -185.0
+margin_right = 325.0
+margin_bottom = 185.0
+texture = ExtResource( 2 )
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayerContainer" type="HBoxContainer" parent="UI/CharacterScreen"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 188.0
+custom_constants/separation = 130
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/CharacterScreen"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -379.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="UI/CharacterScreen/HBoxContainer"]
+margin_left = 180.0
+margin_right = 460.0
+margin_bottom = 69.0
+custom_fonts/font = ExtResource( 3 )
+text = "Press 'A' to join"
+align = 1
+valign = 1
+
+[node name="Camera" type="Camera2D" parent="."]
+offset = Vector2( 320, 180 )
+current = true
+script = ExtResource( 8 )

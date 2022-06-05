@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/annoyed quack 2.mp3-2bb91c1fa47bb808deac2e1de68a8d0c.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/annoyed quack 2.mp3"
+dest_files=[ "res://.import/annoyed quack 2.mp3-2bb91c1fa47bb808deac2e1de68a8d0c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

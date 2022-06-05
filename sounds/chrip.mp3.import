@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/chrip.mp3-41f97ecc744ec4c2d0f0f0fef57863de.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/chrip.mp3"
+dest_files=[ "res://.import/chrip.mp3-41f97ecc744ec4c2d0f0f0fef57863de.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

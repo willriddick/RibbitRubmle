@@ -1,0 +1,99 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scenes/spawn_point.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/block.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/saw.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/trampoline.tscn" type="PackedScene" id=4]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Blocking" type="Node2D" parent="."]
+position = Vector2( 0, -168 )
+
+[node name="Block" parent="Blocking" instance=ExtResource( 2 )]
+position = Vector2( 320, 536 )
+scale = Vector2( 20, 2 )
+
+[node name="Block2" parent="Blocking" instance=ExtResource( 2 )]
+position = Vector2( 304, 56 )
+scale = Vector2( 20, 1 )
+
+[node name="Block5" parent="Blocking" instance=ExtResource( 2 )]
+position = Vector2( 0, 280 )
+scale = Vector2( 1, 15 )
+
+[node name="Block8" parent="Blocking" instance=ExtResource( 2 )]
+position = Vector2( 640, 280 )
+scale = Vector2( 1, 15 )
+
+[node name="Block7" parent="Blocking" instance=ExtResource( 2 )]
+position = Vector2( 320, 344 )
+scale = Vector2( 1, 5 )
+
+[node name="Block10" parent="Blocking" instance=ExtResource( 2 )]
+position = Vector2( 96, 328 )
+scale = Vector2( 1, 6 )
+
+[node name="Block9" parent="Blocking" instance=ExtResource( 2 )]
+position = Vector2( 432, 360 )
+scale = Vector2( 1, 4 )
+
+[node name="Block16" parent="Blocking" instance=ExtResource( 2 )]
+position = Vector2( 128, 248 )
+
+[node name="Block17" parent="Blocking" instance=ExtResource( 2 )]
+position = Vector2( 288, 280 )
+
+[node name="Block19" parent="Blocking" instance=ExtResource( 2 )]
+position = Vector2( 352, 488 )
+scale = Vector2( 3, 1 )
+
+[node name="Block23" parent="Blocking" instance=ExtResource( 2 )]
+position = Vector2( 256, 376 )
+scale = Vector2( 3, 1 )
+
+[node name="Block20" parent="Blocking" instance=ExtResource( 2 )]
+position = Vector2( 464, 488 )
+scale = Vector2( 4, 1 )
+
+[node name="Block22" parent="Blocking" instance=ExtResource( 2 )]
+position = Vector2( 480, 312 )
+scale = Vector2( 3, 1 )
+
+[node name="Block21" parent="Blocking" instance=ExtResource( 2 )]
+position = Vector2( 576, 456 )
+scale = Vector2( 3, 3 )
+
+[node name="Saw3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 304, 336 )
+
+[node name="Saw8" parent="." instance=ExtResource( 3 )]
+position = Vector2( 448, 160 )
+
+[node name="Trampoline2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 576, 240 )
+
+[node name="Trampoline5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 160, 336 )
+
+[node name="Trampoline3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 624, 112 )
+facing_dir = 2
+
+[node name="Trampoline4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 112, 144 )
+facing_dir = 3
+
+[node name="Spawns" type="Node2D" parent="."]
+
+[node name="SpawnPoint4" parent="Spawns" instance=ExtResource( 1 )]
+position = Vector2( 112, 48 )
+
+[node name="SpawnPoint3" parent="Spawns" instance=ExtResource( 1 )]
+position = Vector2( 32, 320 )
+
+[node name="SpawnPoint2" parent="Spawns" instance=ExtResource( 1 )]
+position = Vector2( 608, 224 )
+
+[node name="SpawnPoint" parent="Spawns" instance=ExtResource( 1 )]
+position = Vector2( 368, 288 )

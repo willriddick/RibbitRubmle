@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/roll.mp3-8b706e6218e22123bf8ce5b593db2b52.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/roll.mp3"
+dest_files=[ "res://.import/roll.mp3-8b706e6218e22123bf8ce5b593db2b52.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
